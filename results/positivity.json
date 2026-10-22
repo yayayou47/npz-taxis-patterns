@@ -1,0 +1,16 @@
+{
+  "initial_slope": -0.003668598563984721,
+  "with_taxis": {
+    "chi_p": 0.05,
+    "min_c2": -0.002307466140394787,
+    "t_min": 1.8,
+    "first_negative_time": 0.01
+  },
+  "without_taxis": {
+    "chi_p": 0.0,
+    "min_c2": -2.1693665743990903e-16,
+    "t_min": 0.01,
+    "first_negative_time": 0.01
+  },
+  "HD_margin": 0.07500000000000001
+}

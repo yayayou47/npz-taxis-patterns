@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "npz-taxis-patterns: code for 'Weak solutions and taxis-driven patterns of a quasi-linear NPZ model with nutrient-taxis and prey-taxis cross-diffusion'"
+authors:
+  - family-names: Yaya
+    given-names: Yaya Youssouf
+    orcid: "https://orcid.org/0000-0003-0781-4923"
+  - family-names: Sy
+    given-names: Mamadou
+  - family-names: Ngom
+    given-names: Diene
+license: MIT
+repository-code: "https://github.com/yayayou47/npz-taxis-patterns"
