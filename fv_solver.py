@@ -5,7 +5,7 @@ Finite-volume IMEX solver for the truncated NPZ cross-diffusion system
 
 on a box (0,L_1) x ... x (0,L_d), d = 1, 2 or 3, uniform cell-centred grid.
 
-Scheme (Section 7.1 of the revised manuscript)
+Scheme (Section 2.3 of the revised manuscript)
 - space: cell averages; diffusive and cross-diffusive fluxes on interior faces
   by centred differences, sigma at the face taken as the mean of the two cell
   values; all boundary fluxes set to zero (exact zero-flux condition);

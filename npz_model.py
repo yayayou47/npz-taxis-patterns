@@ -1,9 +1,9 @@
 """
 NPZ model with nutrient-taxis and prey-taxis: kinetics, coexistence
 equilibrium, closed-form Jacobian and the taxis-instability thresholds of
-Propositions 6.2-6.4 (revised manuscript).
+Propositions 3.8-3.10 (revised manuscript).
 
-Every number of Section 6 of the manuscript is computed here; the other
+Every number of Section 3.3 of the manuscript is computed here; the other
 scripts import this module, so there is a single definition of the
 parameters, of the equilibrium and of the thresholds.
 """
@@ -46,7 +46,7 @@ def equilibrium(p=PARAMS):
 
 
 def jacobian_closed(p=PARAMS):
-    """Closed-form Jacobian at c* (Lemma 6.1): returns J and (b, g, r)."""
+    """Closed-form Jacobian at c* (Lemma 3.7): returns J and (b, g, r)."""
     S, n0, beta, alpha, mu3 = (p[k] for k in ("S", "n0", "beta", "alpha", "mu3"))
     c2 = equilibrium(p)[1]
     b = beta * c2 / (1 + n0) ** 2
@@ -70,7 +70,7 @@ def jacobian_numeric(p=PARAMS, h=1e-6):
 
 
 def hurwitz(p=PARAMS):
-    """Routh-Hurwitz coefficients A1, A2, A3 of J (closed form, Lemma 6.1)."""
+    """Routh-Hurwitz coefficients A1, A2, A3 of J (closed form, Lemma 3.7)."""
     S, mu3 = p["S"], p["mu3"]
     _, b, g, r = jacobian_closed(p)
     A1 = S + b - g * r

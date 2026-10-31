@@ -1,5 +1,5 @@
 """
-Writes 01_revised_manuscript/values.tex: every number quoted in Sections 5-7
+Writes 01_revised_manuscript/values.tex: every number quoted in Sections 2.3 and 3.2-3.5
 of the manuscript, as LaTeX macros, from npz_model.py and results/*.json.
 The manuscript and the response letter read this file; never edit it by hand.
 """

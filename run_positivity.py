@@ -1,5 +1,5 @@
 """
-Illustration of Proposition 5.2 (loss of positivity) on (0,20), one dimension.
+Illustration of Proposition 3.6 (loss of positivity) on (0,20), one dimension.
 
 Initial data: nutrient bump c1 = n0 + 0.5 exp(-(x-10)^2/2), phytoplankton free
 zone c2 = 0 on |x - 10| <= 2 joined C^1 to c2* on |x - 10| >= 3, c3 = c3*.
@@ -7,7 +7,7 @@ Nutrient-taxis chi_p = 0.05 lies INSIDE (HD) for delta_i = 0.1
 (delta_1 - chi_p/2 = delta_2 - chi_p/2 = 0.075 > 0), chi_z = 0.
 
 Reports min c2 on t in [0, 2] for chi_p = 0.05 and chi_p = 0, and the
-initial slope chi_p * int Lap h(c1_0) phi of Proposition 5.2 for a bump phi.
+initial slope chi_p * int Lap h(c1_0) phi of Proposition 3.6 for a bump phi.
 Writes results/positivity.json.
 """
 import json

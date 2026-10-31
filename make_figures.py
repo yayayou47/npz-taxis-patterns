@@ -19,7 +19,7 @@ W = fs.WONG
 
 def fig_domain():
     """Box Omega = (0,L1) x (0,L2) x (0,L3) in oblique projection: axes,
-    dimensions, boundary parts, and the overturning cell of Section 7.3."""
+    dimensions, boundary parts, and the overturning cell of Section 3.5."""
     L1, L2, L3 = 4.0, 3.0, 1.6
     ang, sc = np.deg2rad(35), 0.55
 
@@ -91,9 +91,11 @@ def fig_dispersion():
     gr4 = m.growth_rate(k, chiz=4.0)
     ax[0].fill_between(k, 0, gr4, where=gr4 > 0, color=W["vermillion"], alpha=0.18,
                        label="unstable band, $\\chi_z=4$")
-    kf = k[gr4.argmax()]
-    ax[0].plot([kf], [gr4.max()], "o", color=W["vermillion"])
-    ax[0].annotate(rf"$k_f\approx{kf:.2f}$", (kf, gr4.max()), xytext=(8, -4),
+    # fastest mode: the same value as \KF in the text (results/patterns2d.json)
+    lin = json.load(open(os.path.join(RES, "patterns2d.json")))["linear"]
+    kf, lf = lin["k_fastest"], lin["lambda_fastest"]
+    ax[0].plot([kf], [lf], "o", color=W["vermillion"])
+    ax[0].annotate(rf"$k_f\approx{kf:.2f}$", (kf, lf), xytext=(8, -4),
                    textcoords="offset points")
     ax[0].axhline(0, color="k", lw=0.8)
     ax[0].set_xlabel("wavenumber $k$"); ax[0].set_ylabel(r"$\max_j \mathrm{Re}\,\lambda_j(k)$")

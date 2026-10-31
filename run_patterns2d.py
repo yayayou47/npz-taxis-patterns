@@ -1,5 +1,5 @@
 """
-Section 7.2: prey-taxis patterns on (0,20)^2, chi_z = 4, chi_p = 0, delta_i = 0.1.
+Section 3.4: prey-taxis patterns on (0,20)^2, chi_z = 4, chi_p = 0, delta_i = 0.1.
 
  1. linear phase: growth rate of the cosine mode (m, n) that is fastest for the
     discrete operator, fitted on t in [20, 60] from a 1e-7 perturbation, against

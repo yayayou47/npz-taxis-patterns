@@ -1,5 +1,5 @@
 """
-Section 7.2, attractive nutrient-taxis: chi_p = -8 (phytoplankton moves up the
+Section 3.4, attractive nutrient-taxis: chi_p = -8 (phytoplankton moves up the
 nutrient gradient), chi_z = 0, delta_i = 0.1, on (0,60)^2.
 
 Linear phase (1e-7 perturbation, fit on t in [100, 400]) against the discrete

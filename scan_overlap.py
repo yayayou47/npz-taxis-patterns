@@ -1,5 +1,5 @@
 """
-Section 6 (after Proposition 6.4): can the prey-taxis instability occur inside the coercivity regime?
+Section 3.3 (after Proposition 3.10): can the prey-taxis instability occur inside the coercivity regime?
 
 With chi_p = 0 and delta_i = delta, (HS) reads chi_z < 2 delta, i.e.
 tau = chi_z sigma(c2*)/delta < 2 sigma(c2*) = 2 (1 - mu3/alpha)^2, so the
@@ -9,7 +9,7 @@ instability is compatible with (HS) iff tau_c < 2 (1 - r)^2.
    kept when (HC) and kinetic stability hold; fraction with overlap and the
    distribution of c3* among them.
 2. Reference parameters with mu2 -> beta n0/(1+n0) (g -> 0): tau_c / sqrt(g)
-   stays bounded (Proposition 6.4).
+   stays bounded (Proposition 3.10).
 Writes results/overlap.json.
 """
 import json

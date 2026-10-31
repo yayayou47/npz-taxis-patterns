@@ -4,16 +4,16 @@ Code for *Weak solutions and taxis-driven patterns of a quasi-linear NPZ model w
 
 Requirements: Python 3 with `numpy`, `scipy`, `sympy`, `matplotlib` (`requirements.txt`). License: MIT.
 
-Every figure and every number of Sections 5–7 of the revised manuscript is produced here. The numbers reach the manuscript only through `values.tex`, written by `make_values.py`, which the LaTeX source `\input`s. The simulation results used in the paper are included in `results/` (JSON + `.npz`), so figures and numbers can be regenerated without rerunning the simulations.
+Every figure and every number of Sections 2.3 and 3.2–3.5 of the revised manuscript is produced here. The numbers reach the manuscript only through `values.tex`, written by `make_values.py`, which the LaTeX source `\input`s. The simulation results used in the paper are included in `results/` (JSON + `.npz`), so figures and numbers can be regenerated without rerunning the simulations.
 
 | Script | Produces | Time |
 |---|---|---|
-| `npz_model.py` | parameters, equilibrium, closed-form Jacobian and Hurwitz coefficients, thresholds (Props. 6.2–6.4) | s |
+| `npz_model.py` | parameters, equilibrium, closed-form Jacobian and Hurwitz coefficients, thresholds (Props. 3.8–3.10) | s |
 | `fv_solver.py` | finite-volume IMEX solver (DCT-implicit diffusion, conservative fluxes, streamfunction advection) | — |
 | `test_closed_forms.py` | SymPy check of every closed form + eigenvalue check of every threshold (exit 0/1) | ~30 s |
 | `test_solver.py` | DCT solve, discrete mass balance, div u = 0, u·n = 0, equilibrium preserved (exit 0/1) | s |
 | `run_positivity.py` | 1D loss-of-positivity example → `results/positivity.json` | s |
-| `scan_overlap.py` | random scan after Prop. 6.4 → `results/overlap.json` | ~3 min |
+| `scan_overlap.py` | random scan after Prop. 3.10 → `results/overlap.json` | ~3 min |
 | `run_patterns2d.py` | linear validation + avoidance patterns, 3 grids, 2 time steps → `results/patterns2d.json` | ~20 min |
 | `run_attraction.py` | nutrient-attraction case, 2 grids → `results/attraction.json` | ~15 min |
 | `run_peclet.py` | overturning-cell sweep, 14 values × 2 grids → `results/peclet.json` | ~90 min |

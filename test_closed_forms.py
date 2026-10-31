@@ -1,5 +1,5 @@
 """
-Non-regression test (exit code 0/1) of the closed forms of Section 6:
+Non-regression test (exit code 0/1) of the closed forms of Section 3.3:
 Jacobian at c*, Routh-Hurwitz coefficients, cofactor C32 = -mu3 (S + delta1 k^2),
 and the coefficients a1, a2, a3 of det(lambda I - M(k^2)) for both taxis
 directions. Symbolic check with SymPy at generic parameters, then numerical
@@ -34,7 +34,7 @@ b = beta * cs[c2] / (1 + n0) ** 2
 g = beta * n0 / (1 + n0) - mu2
 r = mu3 / alpha
 Jc = sp.Matrix([[-S - b, -g, mu3], [b, g * r, -mu3], [0, g * (1 - r), 0]])
-check("closed-form Jacobian (Lemma 6.1)", sp.simplify(J - Jc) == sp.zeros(3, 3))
+check("closed-form Jacobian (Lemma 3.7)", sp.simplify(J - Jc) == sp.zeros(3, 3))
 A1 = S + b - g * r
 A2 = g * (b * (1 - r) - r * S + mu3 * (1 - r))
 A3 = g * mu3 * S * (1 - r)

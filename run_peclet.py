@@ -1,14 +1,14 @@
 """
-Section 7.3: advection-taxis competition in the cross-shore/vertical plane
+Section 3.5: advection-taxis competition in the cross-shore/vertical plane
 (x1, x3) in (0,20) x (0,8), system (2.1) in two dimensions with the
 overturning cell psi = A sin(pi x1/Lx) sin(pi x3/Lz).
 
 Peclet number  Pe = U lambda_f / delta,  U = max |u_h| (face velocities),
-lambda_f = 2 pi / k_f the fastest-growing linear wavelength (Section 6).
+lambda_f = 2 pi / k_f the fastest-growing linear wavelength (Section 3.3).
 Two order parameters, both averaged over t in [T - 50, T]:
   amplitude  a = std(c3) / c3*  (all spatial variability of zooplankton);
   Turing-band fraction  f = share of the variance of c3 carried by cosine
-  modes whose |k| lies in the linearly unstable band (Section 6), which
+  modes whose |k| lies in the linearly unstable band (Section 3.3), which
   separates the spotted Turing pattern from flow-scale structures.
 Crossover Pe_x: where f first falls below 1/2 (linear interpolation).
 
